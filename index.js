@@ -2,8 +2,9 @@ const mysql = require("mysql2");
 const connection = mysql.createConnection({
     host: "localhost",
     user: "user_user",
-    database: "telegram-bot-db",
-    password: "90f8b7rR@"
+    database: "user_telegram-bot-db",
+    password: "90f8b7rR@",
+    port: "3306"
 });
 connection.connect(function(err){
     if (err){
